@@ -1,15 +1,22 @@
 
 import './App.css'
-import Footer from './components/Footer'
+import Header from './components/header'
+import Greetings from './components/Greetings'
+import Button from './components/Button'
+import Card from './components/Card'
 
 function App() {
 
 
   return (
     <>
-     <h1>Hey This is my First React Task</h1>
-     <h1>My Self Harshdeep Singh</h1>
-  <Footer />
+    <div className='div1'> <h1>Hey This is my First React Task</h1></div>
+    
+
+  <Header />
+  <Greetings />
+  <Button />
+  <Card />
     </>
   )
 }
