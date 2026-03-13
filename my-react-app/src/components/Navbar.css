@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    height: 70px;
+    width: 100vw;
+    background-color: brown;
+}
+.header.SearchBar{
+width: 40vw;
+/* align-items: center; */
+justify-content: center ;
+
+}
+.header.UserIcon{
+    width: 30px;
+    align-items: end;
+}
+.header.Navlogo img{
+    width: 10px;
+    /* height: 10px; */
+    align-items: start;
+
+}
