@@ -7,6 +7,7 @@ import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import Parent from './components/Parent'
+import FunctionParent from './components/props/FunctionParent'
 function App() {
 
 
@@ -14,7 +15,8 @@ function App() {
 
   return (
     <>
-  < Parent />
+    <FunctionParent />
+  {/* < Parent /> */}
     {/* <Header /> */}
      {/* <Navbar />
      <br />
