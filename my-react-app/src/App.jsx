@@ -6,6 +6,7 @@ import Button from './components/Button'
 import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
+import Parent from './components/Parent'
 function App() {
 
 
@@ -13,13 +14,18 @@ function App() {
 
   return (
     <>
-     <Navbar />
+  < Parent />
+    {/* <Header /> */}
+     {/* <Navbar />
      <br />
-  <Profile />
+  <Profile /> */}
+ 
+
+  
     {/* /* <div className='div1'> <h1>Hey This is my First React Task</h1></div>
 
    
-  <Header />
+  
   <Greetings />
   <Button />
   <Card />  */}

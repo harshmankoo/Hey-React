@@ -1,0 +1,12 @@
+
+
+.Profile1{
+    background-color: brown;
+    width: 602px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+}
