@@ -1,4 +1,3 @@
-
 import './App.css'
 import Header from './components/header'
 import Greetings from './components/Greetings'
@@ -6,8 +5,7 @@ import Button from './components/Button'
 import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
-import Parent from './components/Parent'
-import FunctionParent from './components/props/FunctionParent'
+import Counter from './components/counter'
 function App() {
 
 
@@ -15,12 +13,17 @@ function App() {
 
   return (
     <>
-    <FunctionParent />
+  
+   
+   
   {/* < Parent /> */}
-    {/* <Header /> */}
-     {/* <Navbar />
+   <Navbar />
+     <Header /> 
+     
      <br />
-  <Profile /> */}
+  <Profile /> 
+
+   <Counter />
  
 
   
