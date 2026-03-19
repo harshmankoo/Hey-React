@@ -15,6 +15,8 @@ function Counter() {
         { name: "Cap", price: 200 }
     ];
 
+
+
     const handleChange = (e) => {
         console.log(e.target.value)
         setName(e.target.value)
@@ -37,25 +39,25 @@ function Counter() {
             <button onClick={() => (setcount(count - 1))}>Decrement</button><br />
 
             <br />
-            ================================================================ 
+===========================================================================
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Enter Your Name...." onChange={handleChange} />
                 <button type="submit">Submit</button>
             </form>
             <h2>Hello from {name}</h2>
-            =======================================================================
+ ==========================================================================
             <br />
             {show ? <h1>Hello World !!</h1> : null}
             <button onClick={() => (setShow(!show))}>TOGGLE</button>
 
             <br />
             <br />
-            ===========================================================================
-<br />
+ ===========================================================================
+            <br />
 
             {/* Task 1
 
-Toggle text using button */}
+             Toggle text using button */}
 
 
             {showMassage ? <h1>Hey i am using a usestate for the toggle Message </h1>
@@ -63,7 +65,7 @@ Toggle text using button */}
 
             <button onClick={() => (setshow(!showMassage))}>Click Here to Reveal the Info</button>
             <br />
-=====================================================================================
+============================================================================
 <br />
 
 {/*
@@ -83,7 +85,7 @@ showData.length===0 ?(<p>NO DATA FOUND IN THE LIST</p>) : (
     </ul>
 )}
 
-// ============================================================================================
+============================================================================
 
 {/* this task is about the accesing aarray value without useState */}
 
@@ -99,7 +101,7 @@ showData.length===0 ?(<p>NO DATA FOUND IN THE LIST</p>) : (
 <br />
 
 <br />
-===================================================================================================
+=============================================================================
 
 
 
