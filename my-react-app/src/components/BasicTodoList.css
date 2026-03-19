@@ -1,0 +1,101 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerline{
+    color: #ffffff;
+    font-weight: bolder;
+
+}
+.todo-main-container {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+
+.main-header {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.input1  {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #c42323;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.addtaskbtn{
+    height: 38px;
+    width: 75px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-weight: bold;
+    background-color :rgb(167, 185, 219) ;
+}
+
+ol li{
+    height: 35px;
+    width: 80%;
+    border: 2px solid #c42323;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    background-color: bisque;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+}
+ol{
+    width: 100%;
+    
+}
+
+.task-list{
+   margin: 3px;
+    color: #333;
+}
+
+.listpara{
+    height: 28px;
+    width: 400;
+    border-color: black;
+    border: 2px solid;
+    background-color: red;
+    color: #ffffff;
+}
+
+.deletebtn{
+       height: 23px;
+    width: 75px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-weight: bold;
+    background-color :rgb(167, 185, 219) ;
+    /* margin-bottom: 10px; */
+}
