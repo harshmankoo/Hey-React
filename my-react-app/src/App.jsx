@@ -17,8 +17,8 @@ function App() {
 
 
 
-      {/* < Parent /> */}
-      {/* <Navbar />
+       {/* < Parent />  */}
+       {/* <Navbar />
       <br />
       <Header />
       <br />
@@ -33,7 +33,7 @@ function App() {
       <Card />
       <br />
       <Counter />
-      <br /> */}
+      <br />  */}
       <BasicTodoList />
 
     </>
