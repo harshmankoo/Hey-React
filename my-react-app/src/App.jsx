@@ -7,24 +7,11 @@ import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import Counter from './components/counter'
-import BasicTodoList from "./components/BasicTodoList"
-import SubTaskPage from "./components/SubTaskPage";
-
+import StudentList from "./components/StudentList";
 function App() {
-
-
-
-
   return (
     <>
-      <BrowserRouter>
-      <div>
-        <Routes>
-          <Route path="/" element={<BasicTodoList />} />
-         <Route path="/subtask/:id" element={<SubTaskPage />} />
-        </Routes>
-        </div>
-      </BrowserRouter>
+<StudentList />
 
 
 
@@ -45,8 +32,8 @@ function App() {
       <br />
       <Counter />
       <br />  */}
-      {/* <BasicTodoList />
-      <SubTaskPage /> */}
+      
+     
 
 
     </>
