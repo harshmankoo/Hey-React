@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./BasicTodoList.css";
+import { useNavigate } from "react-router-dom";
 
 function BasicTodoList() {
     const [task, setTask] = useState("")
     const [showList, setList] = useState([])
     const [activeIndex, setActiveIndex] = useState(null);
+    const navigate = useNavigate();
     // const [subtaskInput, setSubtaskInput] = useState("");
 
     const handleList = (e) => {
@@ -13,10 +15,6 @@ function BasicTodoList() {
 
     }
 
-    const handleSubmitList = (e) => {
-        e.preventDefault();
-        setInput("")
-    }
 
     const addTasks = () => {
         if (task.trim() === "") {
@@ -42,9 +40,14 @@ function BasicTodoList() {
             <br />
             <div className="todo-main-container">
                 <h1 className="main-header">TO-DO-LIST 📓</h1>
-                <form onSubmit={handleSubmitList}>
+                <form
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        addTasks();
+                    }}>
                     <input className="input1" type="text" placeholder="Enter Your Daily Task" onChange={handleList} value={task} />
                     <button onClick={addTasks} className="addtaskbtn">Add Tasks</button>
+                    <button type="button" onClick={addTasks} className="addtaskbtn"> Add Task </button>
                     <div className="task-list">Task List</div>
 
                     {
@@ -53,13 +56,24 @@ function BasicTodoList() {
                             {showList.map((x, i) => (
                                 <li key={i}> {x}
                                     <div>
-                                        <button onClick={() => setActiveIndex(i)} className="subtaskbtn"><i class="fa-solid fa-list-check"></i></button>
+                                        {/* <button
+                                            onClick={() => navigate(`/subtask/${SubTask}`)}
+                                            className="subtaskbtn"
+                                        ></button> */}
 
-                                        <button className="editbtn"><i class="fa fa-pencil"></i></button>
-                                        <button className="deletebtn" onClick={() => deleteTask(i)}><i class="fa fa-trash"></i></button>
+                                        <button
+                                            type="button"
+                                            onClick={() => navigate(`/subtask/${i}`)}
+                                            className="subtaskbtn"
+                                        >
+                                            SubTask
+                                        </button>
+
+                                        <button className="editbtn"><i className="fa fa-pencil"></i></button>
+                                        <button className="deletebtn" onClick={() => deleteTask(i)}><i className="fa fa-trash"></i></button>
                                     </div>
-                                          {activeIndex === i && (
-                                        <input type="text" placeholder="Enter Subtask..." />   )}
+                                    {activeIndex === i && (
+                                        <input type="text" placeholder="Enter Subtask..." />)}
 
                                 </li>
 
