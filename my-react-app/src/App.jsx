@@ -7,13 +7,15 @@ import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import Counter from './components/counter'
-import LifecyclePractice from "./components/StudentList";
-import UseRefTutorial from './components/useref'
+import LifecyclePractice from "./components/Hooks/StudentList";
+import UseRefTutorial from './components/Hooks/useref'
+import FocusInput from './components/Hooks/UseRefTask'
 function App() {
   return (
     <>
 {/* <LifecyclePractice productId={1}/> */}
 <UseRefTutorial />
+        <FocusInput />
 
 
       {/* < Parent />  */}
