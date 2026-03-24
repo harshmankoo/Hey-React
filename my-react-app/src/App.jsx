@@ -7,12 +7,13 @@ import Card from './components/Card'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import Counter from './components/counter'
-import StudentList from "./components/StudentList";
+import LifecyclePractice from "./components/StudentList";
+import UseRefTutorial from './components/useref'
 function App() {
   return (
     <>
-<StudentList />
-
+{/* <LifecyclePractice productId={1}/> */}
+<UseRefTutorial />
 
 
       {/* < Parent />  */}
