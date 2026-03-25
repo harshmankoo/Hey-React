@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Form } from 'react-router-dom'
 import Header from './components/header'
 import Greetings from './components/Greetings'
 import Button from './components/Button'
@@ -9,13 +9,20 @@ import Navbar from './components/Navbar'
 import Counter from './components/counter'
 import LifecyclePractice from "./components/Hooks/StudentList";
 import UseRefTutorial from './components/Hooks/useref'
-import FocusInput from './components/Hooks/UseRefTask'
+import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer }  from './components/Hooks/UseRefTask'
+// import from './components/Hooks/UseRefTask'
+// import from './components/Hooks/UseRefTask'
+// import {RefVsState} from'./components/Hooks/UseRefTask'
 function App() {
   return (
     <>
 {/* <LifecyclePractice productId={1}/> */}
 <UseRefTutorial />
         <FocusInput />
+        <UncontrolledInput />
+        <PreviousValue />
+        <RefVsState />
+        < VideoPlayer />
 
 
       {/* < Parent />  */}
