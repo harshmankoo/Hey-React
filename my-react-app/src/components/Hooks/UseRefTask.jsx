@@ -157,7 +157,7 @@ function VideoPlayer() {
         setCurrentTime(videoRef.current.currentTime);
     };
 
-    
+
 
     // Set duration when video loads
     const handleLoadedMetadata = () => {
@@ -233,8 +233,35 @@ function VideoPlayer() {
 
 
 
+
+// =====================================================================================
+
+// use of the custom hook which denoted as UseCounter in CounterHook
+import useCounter from "./CounterHook";
+
+function UseOfCustomHook() {
+    
+
+const [count,increment , decrement] = useCounter();
+
+return(<>
+==================================================================
+
+<br />
+<h3>Here i am accesing the counter using custom hook</h3>
+<h1>counter ;{count}</h1>
+<button onClick={increment}>+</button>
+<button onClick={decrement}>-</button>
+</>)
+
+}
+
+
+
+
 export default FocusInput;
 export { UncontrolledInput };
 export { PreviousValue }
 export { RefVsState }
 export { VideoPlayer }
+export {UseOfCustomHook};

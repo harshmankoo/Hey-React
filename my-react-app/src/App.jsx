@@ -9,20 +9,20 @@ import Navbar from './components/Navbar'
 import Counter from './components/counter'
 import LifecyclePractice from "./components/Hooks/StudentList";
 import UseRefTutorial from './components/Hooks/useref'
-import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer }  from './components/Hooks/UseRefTask'
-// import from './components/Hooks/UseRefTask'
-// import from './components/Hooks/UseRefTask'
-// import {RefVsState} from'./components/Hooks/UseRefTask'
+import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer, UseOfCustomHook }  from './components/Hooks/UseRefTask'
+// import counter from './components/Hooks/CustomHook'
 function App() {
   return (
     <>
 {/* <LifecyclePractice productId={1}/> */}
-<UseRefTutorial />
+{/* <UseRefTutorial /> */}
         <FocusInput />
         <UncontrolledInput />
         <PreviousValue />
         <RefVsState />
         < VideoPlayer />
+        {/* <counter /> */}
+        <UseOfCustomHook />
 
 
       {/* < Parent />  */}
