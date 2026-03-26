@@ -10,6 +10,7 @@ import Counter from './components/counter'
 import LifecyclePractice from "./components/Hooks/StudentList";
 import UseRefTutorial from './components/Hooks/useref'
 import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer, UseOfCustomHook }  from './components/Hooks/UseRefTask'
+import WithEnhancedHello, { WithEnhancedUser } from './components/Hooks/HOC'
 // import counter from './components/Hooks/CustomHook'
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         < VideoPlayer />
         {/* <counter /> */}
         <UseOfCustomHook />
+        <WithEnhancedHello />
+        <WithEnhancedUser name = "Harshdeep Singh" />
 
 
       {/* < Parent />  */}
