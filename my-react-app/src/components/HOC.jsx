@@ -14,7 +14,8 @@
 import { Component } from "react";
 
 function Message() {
-    return (<h2>This is original </h2>
+    return (
+    <h2>This is original </h2>
     )
 
 }
@@ -85,3 +86,55 @@ const WithEnhancedUser = UserMessage(User)
 
 export default WithEnhancedHello;
 export {WithEnhancedUser}
+
+// ===========================================================================================================================
+
+// Higher Order Components (HOC) - Complete Tutorial
+
+
+function mainDiv() {
+    return (
+        <div className="maindiv">
+            <h2>Hey here i am using a Hoc for the border</h2>
+            <br />
+            <h1>NetSquare Softwares</h1></div>
+    )
+    
+}
+
+
+// =================Now Function with border
+
+function addingBorder(Component) {
+    return function (){
+        return(
+            <div style={{border : "3px solid red"}}>
+                <title>HIGH ORDER COMPONENT</title>
+<h1> Title : HoC</h1>
+    
+                <Component />
+                <br />
+            </div>
+
+        )
+
+    }
+}
+
+
+const MainBorderCLass = addingBorder(mainDiv)
+export {MainBorderCLass }
+// =========================================================================
+
+// -----------------WithLoading--------------------------
+
+// function usersData() {
+//     return ( 
+//         const users : [{ id: 1, name: 'Inder Singh', role: 'Senior Dev' },
+//     { id: 2, name: 'Rahul Kumar', role: 'Developer' },
+//     { id: 3, name: 'Priya Sharma', role: 'Designer' },
+//         ]
+
+//     )
+    
+// }

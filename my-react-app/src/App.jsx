@@ -10,23 +10,15 @@ import Counter from './components/counter'
 import LifecyclePractice from "./components/Hooks/StudentList";
 import UseRefTutorial from './components/Hooks/useref'
 import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer, UseOfCustomHook }  from './components/Hooks/UseRefTask'
-import WithEnhancedHello, { WithEnhancedUser } from './components/Hooks/HOC'
+import WithEnhancedHello, { WithEnhancedUser,MainBorderCLass  } from './components/HOC'
+import HigherOrderComponentsTutorial from '../../../../../Downloads/HigherOrderComponentsTutorial'
 // import counter from './components/Hooks/CustomHook'
 function App() {
   return (
     <>
 {/* <LifecyclePractice productId={1}/> */}
 {/* <UseRefTutorial /> */}
-        <FocusInput />
-        <UncontrolledInput />
-        <PreviousValue />
-        <RefVsState />
-        < VideoPlayer />
-        {/* <counter /> */}
-        <UseOfCustomHook />
-        <WithEnhancedHello />
-        <WithEnhancedUser name = "Harshdeep Singh" />
-
+     
 
       {/* < Parent />  */}
       {/* <Navbar />
@@ -44,9 +36,19 @@ function App() {
       <Card />
       <br />
       <Counter />
-      <br />  */}
+      <br />   */}
       
-     
+       {/* <FocusInput />
+        <UncontrolledInput />
+        <PreviousValue />
+        <RefVsState />
+        < VideoPlayer />
+        <counter />
+        <UseOfCustomHook />
+        <WithEnhancedHello />
+        <WithEnhancedUser name = "Harshdeep Singh" /> */}
+        <HigherOrderComponentsTutorial />
+        <MainBorderCLass />
 
 
     </>
