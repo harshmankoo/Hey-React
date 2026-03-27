@@ -9,16 +9,18 @@ import Navbar from './components/Navbar'
 import Counter from './components/counter'
 import LifecyclePractice from "./components/Hooks/StudentList";
 import UseRefTutorial from './components/Hooks/useref'
-import FocusInput, { RefVsState ,UncontrolledInput, PreviousValue , VideoPlayer, UseOfCustomHook }  from './components/Hooks/UseRefTask'
-import WithEnhancedHello, { WithEnhancedUser,MainBorderCLass  } from './components/HOC'
-import HigherOrderComponentsTutorial from '../../../../../Downloads/HigherOrderComponentsTutorial'
+import FocusInput, { RefVsState, UncontrolledInput, PreviousValue, VideoPlayer, UseOfCustomHook } from './components/Hooks/UseRefTask'
+import WithEnhancedHello, { WithEnhancedUser, MainBorderCLass, ToViewUsers, ShowCounter } from './components/HOC'
+import { Example1_ChildrenProp, Example2_CompoundComponents, Example3_RenderProps } from './components/componentCompostion'
+import HigherOrderComponentsTutorial from './HigherOrderComponentsTutorial'
+
 // import counter from './components/Hooks/CustomHook'
 function App() {
   return (
     <>
-{/* <LifecyclePractice productId={1}/> */}
-{/* <UseRefTutorial /> */}
-     
+      {/* <LifecyclePractice productId={1}/> */}
+      {/* <UseRefTutorial /> */}
+
 
       {/* < Parent />  */}
       {/* <Navbar />
@@ -37,19 +39,23 @@ function App() {
       <br />
       <Counter />
       <br />   */}
-      
-       {/* <FocusInput />
+
+      {/* <FocusInput />
         <UncontrolledInput />
         <PreviousValue />
         <RefVsState />
         < VideoPlayer />
         <counter />
-        <UseOfCustomHook />
-        <WithEnhancedHello />
-        <WithEnhancedUser name = "Harshdeep Singh" /> */}
-        <HigherOrderComponentsTutorial />
-        <MainBorderCLass />
-
+        <UseOfCustomHook />*/}
+      <WithEnhancedHello />
+      <WithEnhancedUser name="Harshdeep Singh" />
+<HigherOrderComponentsTutorial />
+      <MainBorderCLass />
+      <ToViewUsers isLoading={false} />
+      <ShowCounter />
+    <Example1_ChildrenProp />
+    <Example2_CompoundComponents />
+    <Example3_RenderProps />
 
     </>
   )

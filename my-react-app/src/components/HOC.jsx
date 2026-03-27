@@ -11,11 +11,12 @@
 // Wrap and use it
 
 
-import { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
+import Button from "./Button";
 
 function Message() {
     return (
-    <h2>This is original </h2>
+        <h2>This is original </h2>
     )
 
 }
@@ -64,14 +65,14 @@ function UserMessage(Component) {
     return function (props) {
         return (
             <>
-            ===================================================================
-            <br />
+                ===================================================================
+                <br />
                 <h2 style={{ color: "white" }}>Hey Here am using the HIGH ORDER COMPONENT WITH PROPS</h2>
                 <Component {...props} />
             </>
         )
     }
-    
+
 }
 
 // ==================================================================
@@ -85,7 +86,7 @@ const WithEnhancedUser = UserMessage(User)
 
 
 export default WithEnhancedHello;
-export {WithEnhancedUser}
+export { WithEnhancedUser }
 
 // ===========================================================================================================================
 
@@ -99,19 +100,19 @@ function mainDiv() {
             <br />
             <h1>NetSquare Softwares</h1></div>
     )
-    
+
 }
 
 
 // =================Now Function with border
 
 function addingBorder(Component) {
-    return function (){
-        return(
-            <div style={{border : "3px solid red"}}>
+    return function () {
+        return (
+            <div style={{ border: "3px solid red" }}>
                 <title>HIGH ORDER COMPONENT</title>
-<h1> Title : HoC</h1>
-    
+                <h1> Title : HoC</h1>
+
                 <Component />
                 <br />
             </div>
@@ -123,18 +124,139 @@ function addingBorder(Component) {
 
 
 const MainBorderCLass = addingBorder(mainDiv)
-export {MainBorderCLass }
+export { MainBorderCLass }
 // =========================================================================
 
 // -----------------WithLoading--------------------------
 
-// function usersData() {
-//     return ( 
-//         const users : [{ id: 1, name: 'Inder Singh', role: 'Senior Dev' },
-//     { id: 2, name: 'Rahul Kumar', role: 'Developer' },
-//     { id: 3, name: 'Priya Sharma', role: 'Designer' },
-//         ]
+function UserList() {
 
+    const users = [
+        { id: 1, name: 'Inder Singh', role: 'Senior Dev' },
+        { id: 2, name: 'Rahul Kumar', role: 'Developer' },
+        { id: 3, name: 'Priya Sharma', role: 'Designer' }
+    ];
+
+
+    return (
+        <div>
+            <h3>Users</h3>
+            {users.map(user => (<p key={user.id}>{user.name}-{user.id}</p>))}
+            <br />
+            =============================================================================
+        </div>
+    )
+}
+
+
+// =====================
+
+// wrapped function 
+
+function MainUsers(Component) {                         // Component = UserList
+    return function WithLoading({ ...props }) {
+        const [isLoading, setisLoading] = useState(false)
+        const handleClick = () => {
+            setisLoading(true)
+
+            setTimeout(() => {
+                setisLoading(false)
+            }, 2000);
+        };
+        if (isLoading) {
+            return (<div>
+                <p>Loading...</p>
+            </div>
+            )
+
+        }
+        return (
+            <div><br />
+                ==================================================================================<br />
+                <button onClick={handleClick}>Load Users</button>
+
+                <Component {...props} />
+            </div>
+        )
+    };
+}
+
+
+// ===========
+
+const ToViewUsers = MainUsers(UserList)
+
+export { ToViewUsers }
+
+
+// ===================================================================================================================
+
+// Example: withLogger HOC
+
+function Counter({ initialCount = 0 }) {
+    const [count, setCount] = useState(10);
+
+    return (
+        <div>
+            <h2>Count: {count}</h2>
+
+            <button onClick={() => setCount(count + 1)}>+1</button>
+            <button onClick={() => setCount(count - 1)}>-1</button>
+        </div>
+    );
+}
+// ================================
+
+function WithLogger(Component, Name) {
+    return function withlogger(props) {
+        const [show, setshow] = useState(true)
+
+
+        useEffect(() => {
+
+            console.log(Name + "Component Mounted")
+            return () => {
+                console.log(Name + "Component Unmounted")
+            }
+        }, []);
+
+        return (<div>  <button onClick={() => setshow(!show)}>
+            {show ? "Hide Counter" : "Show Counter"}
+        </button>
+            {show && <Component {...props} />}
+        </div>
+        )
+
+    }
+}
+// ===============================================================
+const ShowCounter = WithLogger(Counter, "Counter")
+// ===============================================================
+export { ShowCounter }
+
+// ====================================================================================================
+
+
+
+// -------------------TOGGLE HOC--------------------
+
+
+// function ContentBox() { 
+//     return (
+//         <div>
+//             <h1>hey there i am using the Toggle hoc</h1>
+//             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam illum, ratione incidunt officiis natus rem aspernatur consequatur debitis et eum magni eos fuga repellendus.</p>
+//         </div>
 //     )
     
+// }
+
+// function ForToggle(Component) {
+//     return function Toggle(props) {
+//         return (
+//             <button onClick={() => {}}>
+//                 Toggle
+//             </button>
+//         );
+//     }
 // }
