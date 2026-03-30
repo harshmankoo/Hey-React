@@ -13,6 +13,9 @@ import FocusInput, { RefVsState, UncontrolledInput, PreviousValue, VideoPlayer, 
 import WithEnhancedHello, { WithEnhancedUser, MainBorderCLass, ToViewUsers, ShowCounter } from './components/HOC'
 import { Example1_ChildrenProp, Example2_CompoundComponents, Example3_RenderProps } from './components/componentCompostion'
 import HigherOrderComponentsTutorial from './HigherOrderComponentsTutorial'
+import ControlledForm from './components/ControlledComponents.jsx/Controlled'
+import ControlledFormTask from './components/ControlledComponents.jsx/ControlledComponentTask'
+import ControlledInput from './components/ControlledComponents.jsx/ControlledComponentTask'
 
 // import counter from './components/Hooks/CustomHook'
 function App() {
@@ -47,7 +50,7 @@ function App() {
         < VideoPlayer />
         <counter />
         <UseOfCustomHook />*/}
-      <WithEnhancedHello />
+      {/* <WithEnhancedHello />
       <WithEnhancedUser name="Harshdeep Singh" />
 <HigherOrderComponentsTutorial />
       <MainBorderCLass />
@@ -55,7 +58,10 @@ function App() {
       <ShowCounter />
     <Example1_ChildrenProp />
     <Example2_CompoundComponents />
-    <Example3_RenderProps />
+    <Example3_RenderProps /> */}
+    <ControlledForm />
+    <ControlledFormTask />
+    <ControlledInput />
 
     </>
   )
