@@ -13,17 +13,16 @@ import FocusInput, { RefVsState, UncontrolledInput, PreviousValue, VideoPlayer, 
 import WithEnhancedHello, { WithEnhancedUser, MainBorderCLass, ToViewUsers, ShowCounter } from './components/HOC'
 import { Example1_ChildrenProp, Example2_CompoundComponents, Example3_RenderProps } from './components/componentCompostion'
 import HigherOrderComponentsTutorial from './HigherOrderComponentsTutorial'
-import ControlledForm from './components/ControlledComponents.jsx/Controlled'
-import ControlledFormTask from './components/ControlledComponents.jsx/ControlledComponentTask'
-import ControlledInput from './components/ControlledComponents.jsx/ControlledComponentTask'
+import ControlledFormGursimran from './components/ControlledComponents/Controlled'
+import ControlledForm from './components/ControlledComponents/ControlledComponentTask'
+import FormsCompleteTutorial from './components/ControlledComponents/Fullprogram'
 
-// import counter from './components/Hooks/CustomHook'
+
 function App() {
   return (
     <>
       {/* <LifecyclePractice productId={1}/> */}
       {/* <UseRefTutorial /> */}
-
 
       {/* < Parent />  */}
       {/* <Navbar />
@@ -59,9 +58,10 @@ function App() {
     <Example1_ChildrenProp />
     <Example2_CompoundComponents />
     <Example3_RenderProps /> */}
-    <ControlledForm />
-    <ControlledFormTask />
-    <ControlledInput />
+   <ControlledFormGursimran />
+    <FormsCompleteTutorial />
+   <ControlledForm />
+  
 
     </>
   )
