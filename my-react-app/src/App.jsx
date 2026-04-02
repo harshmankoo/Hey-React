@@ -16,6 +16,9 @@ import HigherOrderComponentsTutorial from './HigherOrderComponentsTutorial'
 import ControlledFormGursimran from './components/ControlledComponents/Controlled'
 import ControlledForm from './components/ControlledComponents/ControlledComponentTask'
 import FormsCompleteTutorial from './components/ControlledComponents/Fullprogram'
+import Context from './components/State Managment/StateManagement'
+import ThemeSwitcher from './components/State Managment/BasicContext'
+import AdvancedContext from './components/State Managment/AdvancedContext'
 
 
 function App() {
@@ -58,11 +61,17 @@ function App() {
     <Example1_ChildrenProp />
     <Example2_CompoundComponents />
     <Example3_RenderProps /> */}
-   <ControlledFormGursimran />
-    <FormsCompleteTutorial />
-   <ControlledForm />
-  
 
+
+      {/* ================================================== */}
+      <ControlledFormGursimran />
+      <FormsCompleteTutorial />               {/*Form Handlling Control nd UNcontrolled  */}
+      <ControlledForm />
+      {/* ========================================== */}
+      <Context />
+      <ThemeSwitcher />                 { /*state Management */}
+      <AdvancedContext />
+      {/* =========================================== */}
     </>
   )
 }
