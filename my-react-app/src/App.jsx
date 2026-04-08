@@ -12,13 +12,21 @@ import UseRefTutorial from './components/Hooks/useref'
 import FocusInput, { RefVsState, UncontrolledInput, PreviousValue, VideoPlayer, UseOfCustomHook } from './components/Hooks/UseRefTask'
 import WithEnhancedHello, { WithEnhancedUser, MainBorderCLass, ToViewUsers, ShowCounter } from './components/HOC'
 import { Example1_ChildrenProp, Example2_CompoundComponents, Example3_RenderProps } from './components/componentCompostion'
-import HigherOrderComponentsTutorial from './HigherOrderComponentsTutorial'
+import HigherOrderComponentsTutorial from './components/HigherOrderComponentsTutorial'
 import ControlledFormGursimran from './components/ControlledComponents/Controlled'
 import ControlledForm from './components/ControlledComponents/ControlledComponentTask'
 import FormsCompleteTutorial from './components/ControlledComponents/Fullprogram'
 import Context from './components/State Managment/StateManagement'
 import ThemeSwitcher from './components/State Managment/BasicContext'
 import AdvancedContext from './components/State Managment/AdvancedContext'
+import UNcontrolledForm from './components/ControlledComponents/Uncontrolledcomponent'
+import RoutingTutorial from './components/React Routing/ReactRouting'
+import Home from './components/React Routing/home'
+import About from './components/React Routing/About'
+import Contact from './components/React Routing/Contact'
+import SimpleForm from './components/Files and Forms Mastery/DynamicJobForm(SimpleForm)'
+import ImageUploadDemo from './components/Files and Forms Mastery/ImageUPload'
+import AdvancedFormsTutorial from './components/Files and Forms Mastery/FormManagement'
 
 
 function App() {
@@ -63,15 +71,41 @@ function App() {
     <Example3_RenderProps /> */}
 
 
-      {/* ================================================== */}
+      {/* ==================================================
       <ControlledFormGursimran />
       <FormsCompleteTutorial />               {/*Form Handlling Control nd UNcontrolled  */}
-      <ControlledForm />
+      {/* <ControlledForm /> */}
+      ========================
+      {/* <UNcontrolledForm /> */}
+      
       {/* ========================================== */}
-      <Context />
-      <ThemeSwitcher />                 { /*state Management */}
-      <AdvancedContext />
-      {/* =========================================== */}
+      {/* <Context /> */}
+      {/* <ThemeSwitcher />                 {     /*state Management */} 
+      {/* <AdvancedContext /> */}
+      =========================================== 
+
+      {/* <RoutingTutorial />                        {/* Routing Tutorial*/ }
+------------------------------
+      {/* <BrowserRouter>
+      <Routes>
+        <Route path='/' element = {<Home />}/>
+        <Route path = '/about' element = {<About />}/> 
+        <Route path = '/contact' element = {<Contact/>}/>
+      </Routes>
+      </BrowserRouter> */} 
+==============================================================================================
+{/* files and form Mastery*/}
+
+
+{/* <SimpleForm/> */}
+-------------------------------------------
+{/* <ImageUploadDemo/> */}
+-------------------------------------------
+
+ <Form/>
+ ----------------------------------------------- 
+{/* <AdvancedFormsTutorial/>  */}
+
     </>
   )
 }
