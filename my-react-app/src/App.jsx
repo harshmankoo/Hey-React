@@ -27,6 +27,10 @@ import Contact from './components/React Routing/Contact'
 import SimpleForm from './components/Files and Forms Mastery/DynamicJobForm(SimpleForm)'
 import ImageUploadDemo from './components/Files and Forms Mastery/ImageUPload'
 import AdvancedFormsTutorial from './components/Files and Forms Mastery/FormManagement'
+import ApiIntegrationMasterclass from './components/AdvancedApi Managment/CompleteTopis'
+import ApiClientDemo from './components/AdvancedApi Managment/AxiosInterceptors'
+import TanStackQueryDemo from './components/AdvancedApi Managment/TankStackQuery'
+import ChatRealTimeDemo from './components/AdvancedApi Managment/WebSocket'
 
 
 function App() {
@@ -102,9 +106,27 @@ function App() {
 {/* <ImageUploadDemo/> */}
 -------------------------------------------
 
- <Form/>
+ {/* <Form/> */}
  ----------------------------------------------- 
 {/* <AdvancedFormsTutorial/>  */}
+
+
+
+
+------------------------------------------------
+{/* Advanced Api Management */}
+
+<ApiIntegrationMasterclass/>
+--------
+< ApiClientDemo/>
+-------------
+<TanStackQueryDemo/>
+------------------
+{/* <ChatRealTimeDemo/> */}
+-----------------------
+{/* All Methods Task */}
+<getUsers />
+----------------
 
     </>
   )
