@@ -31,6 +31,11 @@ import ApiIntegrationMasterclass from './components/AdvancedApi Managment/Comple
 import ApiClientDemo from './components/AdvancedApi Managment/AxiosInterceptors'
 import TanStackQueryDemo from './components/AdvancedApi Managment/TankStackQuery'
 import ChatRealTimeDemo from './components/AdvancedApi Managment/WebSocket'
+import GetUserDataUsingAxios from './components/AdvancedApi Managment/AllMethodsTasks'
+import TailwindExplanation from './components/Styling/tailwindExplantion'
+import StylingMasterclass from './components/Styling/completeProgram'
+import AnimationDemo from './components/Styling/animationDemo'
+import StyledComponentDemo from './components/Styling/styledComponents'
 
 
 function App() {
@@ -125,8 +130,16 @@ function App() {
 {/* <ChatRealTimeDemo/> */}
 -----------------------
 {/* All Methods Task */}
-<getUsers />
+<GetUserDataUsingAxios/>
 ----------------
+
+
+
+
+<TailwindExplanation/>
+<StylingMasterclass/>
+<AnimationDemo/>
+<StyledComponentDemo/>
 
     </>
   )
