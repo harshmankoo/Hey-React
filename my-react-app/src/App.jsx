@@ -36,6 +36,13 @@ import TailwindExplanation from './components/Styling/tailwindExplantion'
 import StylingMasterclass from './components/Styling/completeProgram'
 import AnimationDemo from './components/Styling/animationDemo'
 import StyledComponentDemo from './components/Styling/styledComponents'
+import PerformanceMasterclass from './components/Optimization/CompleteProgram'
+import CallbackDemo from './components/Optimization/CallBackDemo'
+import CodeSplittingDemo from './components/Optimization/CodeSplittingDemo'
+import LazyDashboard from './components/Optimization/LazyDashboard'
+import MemoizationDemo from './components/Optimization/MemorizationDemo'
+import OptimizedButton from './components/Optimization/OptimizedButton'
+import SlowComponent from './components/Optimization/SlowComponent'
 
 
 function App() {
@@ -86,22 +93,22 @@ function App() {
       {/* <ControlledForm /> */}
       ========================
       {/* <UNcontrolledForm /> */}
-      
+
       {/* ========================================== */}
       {/* <Context /> */}
-      {/* <ThemeSwitcher />                 {     /*state Management */} 
+      {/* <ThemeSwitcher />                 {     /*state Management */}
       {/* <AdvancedContext /> */}
-      =========================================== 
+      ===========================================
 
-      {/* <RoutingTutorial />                        {/* Routing Tutorial*/ }
-------------------------------
+      {/* <RoutingTutorial />                        {/* Routing Tutorial*/}
+      ------------------------------
       {/* <BrowserRouter>
       <Routes>
         <Route path='/' element = {<Home />}/>
         <Route path = '/about' element = {<About />}/> 
         <Route path = '/contact' element = {<Contact/>}/>
       </Routes>
-      </BrowserRouter> */} 
+      </BrowserRouter> */}
 ==============================================================================================
 {/* files and form Mastery*/}
 
@@ -112,7 +119,7 @@ function App() {
 -------------------------------------------
 
  {/* <Form/> */}
- ----------------------------------------------- 
+ -----------------------------------------------
 {/* <AdvancedFormsTutorial/>  */}
 
 
@@ -121,26 +128,38 @@ function App() {
 ------------------------------------------------
 {/* Advanced Api Management */}
 
-<ApiIntegrationMasterclass/>
+{/* <ApiIntegrationMasterclass/> */}
 --------
-< ApiClientDemo/>
+{/* < ApiClientDemo/> */}
 -------------
-<TanStackQueryDemo/>
+{/* <TanStackQueryDemo/> */}
 ------------------
 {/* <ChatRealTimeDemo/> */}
 -----------------------
 {/* All Methods Task */}
-<GetUserDataUsingAxios/>
+{/* <GetUserDataUsingAxios/> */}
 ----------------
 
 
 
-
+------------------------------------------------------------
 <TailwindExplanation/>
 <StylingMasterclass/>
 <AnimationDemo/>
+                                                     {/* styling */}
 <StyledComponentDemo/>
+<hr />
+-------------------------------------------------------------
+                                                         {/* Optimization */}
 
+                <PerformanceMasterclass/>
+                <CallbackDemo/>
+                <CodeSplittingDemo/>
+                <LazyDashboard/>
+                <MemoizationDemo/>
+                <OptimizedButton/>
+                <SlowComponent/>
+  <hr />
     </>
   )
 }
