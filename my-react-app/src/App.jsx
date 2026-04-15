@@ -43,6 +43,7 @@ import LazyDashboard from './components/Optimization/LazyDashboard'
 import MemoizationDemo from './components/Optimization/MemorizationDemo'
 import OptimizedButton from './components/Optimization/OptimizedButton'
 import SlowComponent from './components/Optimization/SlowComponent'
+import TestingMasterclass from './components/Testing/MasterClassTesting'
 
 
 function App() {
@@ -160,6 +161,8 @@ function App() {
                 <OptimizedButton/>
                 <SlowComponent/>
   <hr />
+  ----------------------------
+  <TestingMasterclass/>
     </>
   )
 }
